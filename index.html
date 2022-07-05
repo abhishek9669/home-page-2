@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style .css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header-fixed">
+            <div class="header-limiter">
+                <h1><a href="#"> 
+                    <h3 class="fw-bold  a_logo"> <span class="a_logo">Milton keynes</span> <span class="a_taxi">taxi</span></h1>
+                </span></a></h1>
+                <nav>
+                    <a class="nav-link" href="#">Home</a>                
+                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#">Our Fleet</a> 
+                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#">Blogs</a> 
+                    <a class="nav-link" href="#">FAQ</a> 
+                    <a class="nav-link" href="#">Testimonials</a> 
+                    <a class="nav-link" href="#">Register/Login</a> 
+                    <a class="nav-link" href="#">Contact Us</a> 
+                </nav>
+            </div>
+        
+        </header>
+        <section class="banner">
+            <div class="a_form">
+                <h3 class="a_text">Instant Quote & Online Booking</h3>
+                <div class="input1 row mt-3">
+                    <div class="col-5 ">
+                        <i class="fa-solid fa-location-dot a_icon"></i>
+                        <span class="a_span">Pick up Location</span>  
+                    </div> 
+                    <div class="col-7 ">
+                        <input class="a_inputlocation  w-100" type="text" placeholder="Enter pickup Location">
+
+                    </div> 
+                </div>
+                <div class="input1 row mt-3">
+                    <div class="col-5 ">
+                        <i class="fa-solid fa-location-dot a_icon"></i>
+                        <span class="a_span">Drop off Location</span>  
+                    </div> 
+                    <div class="col-7 ">
+                        <input class="a_inputlocation  w-100" type="text" placeholder="Enter Drop off Location">
+
+                    </div> 
+                    <div class="row  a_button ">
+                        <div class="col-6 ">
+                            <button type="button" class="btn btn-dark float-end" >Add Waypoint</button>
+                        </div>
+                        <div class="col-6 ">
+                            <button type="button" class="btn btn-warning ">Get Quote</button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+
+            $(document).ready(function(){
+        
+                var showHeaderAt = 150;
+        
+                var win = $(window),
+                        body = $('body');
+        
+                // Show the fixed header only on larger screen devices
+        
+                if(win.width() > 400){
+        
+                    // When we scroll more than 150px down, we set the
+                    // "fixed" class on the body element.
+        
+                    win.on('scroll', function(e){
+        
+                        if(win.scrollTop() > showHeaderAt) {
+                            body.addClass('fixed');
+                        }
+                        else {
+                            body.removeClass('fixed');
+                        }
+                    });
+        
+                }
+        
+            });
+        
+        </script>
+    </body>
+</html>

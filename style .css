@@ -1,0 +1,208 @@
+.header-fixed {
+	background-color:#292c2f;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+	color: #5383d3;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+/* Making the header responsive */
+@media all and (max-width: 1032px) {
+    .header-fixed {
+		padding: 20px 0;
+		height: 100px;
+	}
+
+}
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 85px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.a_logo{
+    font-weight: 600;
+    color:  rgb(204, 179, 16) !important ;
+}
+.a_taxi{
+    color: rgb(204, 179, 16) !important;
+}
+.banner{
+    height: 450px;
+    background-image: url(./img/e52623cb8578d625.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    /* opacity: 1; */
+    
+  
+}
+.a_form{
+        padding: 25px;
+        margin: auto;   
+        width: 500px;
+        height: 300px;
+        opacity: 0.9;
+        background-image: url(./img/light-defocused-background-ligbackgroundbeautifulblueht-transparent-colors-181086418.jpg);
+    
+}
+.a_text{
+    
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        
+    
+}
+.input1{ 
+    margin-top: 23px;
+    border-radius: 3px; 
+     background-color: #fff;
+    height:45px;
+    border:1px solid #292c2f;
+    padding-top: 5px;
+}
+.a_tbdr{
+    border:1px solid #292c2f;
+
+}
+.a_icon{
+    color: rgb(204, 179, 16);
+}
+.a_span{
+    border-right: 1px solid black;
+    padding-right: 10px;
+    padding-left: 15px;
+
+    font-size: 15px;
+}
+.a_inputlocation{
+    border: none;
+    box-shadow: none;
+
+}
+.a_button{
+    height: 30px;
+    padding-top:50px;
+}
