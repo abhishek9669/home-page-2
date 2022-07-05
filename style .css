@@ -154,9 +154,7 @@ body {
     background-position: center;
     background-size: cover;
     padding-top: 90px;
-    /* opacity: 1; */
-    
-  
+    /* opacity: 1; */ 
 }
 .a_form{
         padding: 25px;
@@ -164,8 +162,7 @@ body {
         width: 500px;
         height: 300px;
         opacity: 0.9;
-        background-image: url(./img/light-defocused-background-ligbackgroundbeautifulblueht-transparent-colors-181086418.jpg);
-    
+        background-image: url(./img/light-defocused-background-ligbackgroundbeautifulblueht-transparent-colors-181086418.jpg); 
 }
 .a_text{
     
@@ -209,7 +206,6 @@ body {
 /* slider css */
 .a_section2{
     height: 300px;
-
 }
 .a_h3{
     text-align: center;
@@ -227,6 +223,7 @@ body {
 }
 .a_overflow{
     overflow: hidden;
+	padding-left: 70px;
 }
 .card{
     background-color:rgb(216, 210, 203);
@@ -238,7 +235,7 @@ body {
     color: blue;
 }
 .a_section3{
-    height: 250px;
+    /* height: 250px; */
     background-image: url(./img/snow-black-background-christmas-background-white-snow-black-background-edit-photo-164628055.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -270,13 +267,13 @@ body {
 	margin-right: 50px !important;
 }
 .sectionmasseg{
-	min-height: 400px;
+	/* min-height: 400px; */
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
 .box5{
 	background-color: antiquewhite;
-	height: 310px;
+	/* height: 310px; */
 }
 .milton{
 	font-weight: bold;
@@ -295,7 +292,7 @@ body {
 	color: rgb(204, 179, 16);
 }
 .sectiondropdown{
-	height: 500px;
+	/* height: 500px; */
 }
 
 .accordion {
@@ -343,8 +340,9 @@ body {
 		color: rgb(204, 179, 16) !important;
 
 	}
+
 	.a_teximge{
-		height: 400px;
+		/* height: 400px; */
 		background-image: url(./img/download.jpeg);
 		background-size: contain;
 	}
@@ -389,17 +387,19 @@ body {
 	width: 400px;
 	height: 200px;
 	margin-top: 50px;
+	margin-bottom: 50px;
+
 	opacity: 0.8;
 	padding: 15px;
   }
   footer{
-	height: 400px;
+	/* height: 400px; */
 	padding-top: 50px;
 
 
   }
   .a_footer{
-	height: 350px;
+	/* height: 350px; */
 	background-color: #292c2f;
   }
   .a_about{
@@ -445,18 +445,9 @@ body {
   .footerunderline a{
 	text-decoration: none;
   }
-  
-  
-  
-  
-
-
-
-
-
-
-
-
+  header{
+	/* overflow: hidden; */
+  }
 @media all and (max-width: 600px){
 	.a_form{
 		margin: auto;
@@ -471,3 +462,48 @@ body {
 	}
 
 }
+@media all and (max-width: 400px){
+	.a_form{
+		margin: auto;
+		padding-right: 44px;
+		width: 300px;
+		min-height: 350px;
+		
+
+	}
+
+}
+@media all and (max-width: 1000px){
+	.a_sliderresponsiv{
+		margin: auto !important;
+		margin-bottom: 10px;
+		margin-left: 200px !important;
+	}
+	.a_slidebox1{
+		margin: auto;
+	}
+	.a_slider{
+		margin: auto;
+	}
+}
+@media all and (max-width: 966px){
+	.a_slickslider{
+		width: 100%;
+
+	}
+	.a_slidebox1{
+		margin-bottom: 50px;
+	}
+	
+
+}
+@media all and (max-width: 1290px){
+.a_overflow{
+	margin-left: 0px;
+}
+}
+@media all and (max-width: 900){
+	/* .a_overflow{
+		margin-left: 0px !important;
+	} */
+ }
